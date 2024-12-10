@@ -33,6 +33,30 @@ header::before {
     background-color: rgba(42, 54, 115, 0.7); /* Dark overlay with 70% opacity */
     z-index: 1;
 }
+/* Profile Section with Background Image */
+.profile-section {
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Profile Picture Styling */
+.profile-picture .image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 /* Header Text Styling */
 header h1,
