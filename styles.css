@@ -16,6 +16,7 @@ header {
     color: #bfc4e1; /* Light text color */
     padding: 60px 20px;
     margin-bottom: 20px;
+    background-image: url('backgroung.jpg'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -32,35 +33,22 @@ header::before {
     background-color: rgba(42, 54, 115, 0.7); /* Dark overlay with 70% opacity */
     z-index: 1;
 }
-/* Profile Section with Background Image */
-.profile-section {
-    position: relative;
-    background-image: url('backgroung.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* Profile Picture Styling */
-.profile-picture .image-container {
-    display: inline-block;
-    position: relative;
-}
-
-.profile-picture img {
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 
 /* Header Text Styling */
 header h1,
 header p {
     position: relative;
-   
+    z-index: 2;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1
 ::contentReference[oaicite:0]{index=0}
  
