@@ -16,7 +16,7 @@ header {
     color: #bfc4e1; /* Light text color */
     padding: 60px 20px;
     margin-bottom: 20px;
-    background-image: url('backgroung.jpg'); /* Ensure this path is correct */
+    background-image: url('background.jpg'); /* Ensure this path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
