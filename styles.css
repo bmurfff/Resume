@@ -9,12 +9,11 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
 }
 
-/* Header Section with Background Image */
+/* Header Section */
 header {
     position: relative;
     text-align: center;
@@ -31,6 +30,20 @@ header {
     width: 90%;
 }
 
+/* Profile Picture in Header */
+header .profile-picture {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
 /* Overlay for Header Background */
 header::before {
     content: '';
@@ -44,24 +57,6 @@ header::before {
     border-radius: 10px;
 }
 
-/* Header Text Styling */
-header h1,
-header p {
-    position: relative;
-    z-index: 2;
-    margin: 0;
-}
-
-header h1 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header p {
-    font-size: 1.1em;
-}
-
 /* Section Styling */
 section {
     background-color: #2a3673; /* Purple background for boxes */
@@ -72,6 +67,7 @@ section {
     padding: 20px;
     max-width: 800px;
     width: 90%;
+    text-align: left;
 }
 
 /* Section Headers */
@@ -80,14 +76,14 @@ section h2 {
     text-align: center;
 }
 
-/* Section Content */
-section p, section ul {
-    margin: 10px 0;
+/* Image in Profile Section */
+.image-container {
+    text-align: center;
 }
 
-/* Objective List */
-ul {
-    padding-left: 20px;
+.image-container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
@@ -96,11 +92,8 @@ ul {
         width: 95%;
     }
 
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p {
-        font-size: 1em;
+    header .profile-picture {
+        width: 80px;
+        height: 80px;
     }
 }
