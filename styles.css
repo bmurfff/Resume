@@ -4,9 +4,14 @@ body {
     font-size: 16px;
     color: #2a3673; /* Primary text color */
     line-height: 1.6;
-    background-color: #bfc4e1; /* Light background color */
+    background-color: #ffffff; /* White background color */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Section with Background Image */
@@ -20,6 +25,10 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
 }
 
 /* Overlay for Header Background */
@@ -32,6 +41,7 @@ header::before {
     height: 100%;
     background-color: rgba(42, 54, 115, 0.7); /* Dark overlay with 70% opacity */
     z-index: 1;
+    border-radius: 10px;
 }
 
 /* Header Text Styling */
@@ -49,6 +59,48 @@ header h1 {
 }
 
 header p {
-    font-size: 1.1
-::contentReference[oaicite:0]{index=0}
- 
+    font-size: 1.1em;
+}
+
+/* Section Styling */
+section {
+    background-color: #2a3673; /* Purple background for boxes */
+    color: #ffffff; /* White text color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    width: 90%;
+}
+
+/* Section Headers */
+section h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Section Content */
+section p, section ul {
+    margin: 10px 0;
+}
+
+/* Objective List */
+ul {
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, section {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
